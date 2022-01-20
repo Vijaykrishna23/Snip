@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "best-todo-list-apps-00-hero.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "best-todo-list-apps-00-hero@2x.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "best-todo-list-apps-00-hero@3x.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
