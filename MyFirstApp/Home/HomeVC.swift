@@ -48,7 +48,9 @@ extension HomeVC: UITableViewDataSource {
         
         let post = postList[indexPath.row]
         
-        objPostCell?.titleLabel.text = post?.title
+        objPostCell?.titleLabel.text = post?.title ?? ""
+        
+        objPostCell?.bodyLabel.text = post?.body ?? ""
         
         return objPostCell!
     }
@@ -56,9 +58,20 @@ extension HomeVC: UITableViewDataSource {
     
 }
 
-
-struct Movie {
+extension HomeVC: UITableViewDelegate {
     
-    var id:Int?
-    var title:String?
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        
+        let objPostDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailsVC") as? DetailsVC
+        
+        objPostDetailVC?.postModel = postList[indexPath.row]
+        
+        self.navigationController?.pushViewController(objPostDetailVC!, animated: true)
+        
+    }
 }

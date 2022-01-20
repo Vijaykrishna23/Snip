@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		61174F5427969658007C15EC /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61174F5327969658007C15EC /* SignupVC.swift */; };
+		61394F2A279936F100F1C2DF /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61394F29279936F000F1C2DF /* DetailsVC.swift */; };
 		6152F0BE2797EE2500B037B8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152F0BD2797EE2500B037B8 /* HomeVC.swift */; };
 		6152F0C02797F1AB00B037B8 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152F0BF2797F1AB00B037B8 /* MovieCell.swift */; };
 		6152F0C32799149200B037B8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152F0C22799149200B037B8 /* Networking.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		61174F5327969658007C15EC /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		61394F29279936F000F1C2DF /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		6152F0BD2797EE2500B037B8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		6152F0BF2797F1AB00B037B8 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		6152F0C22799149200B037B8 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		61C21EA927967BFF00FF83F8 /* MyFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				61CB8C1927993A9B00625624 /* DetailsVC */,
 				6152F0C72799158800B037B8 /* Model */,
 				6152F0C42799152800B037B8 /* Common */,
 				6152F0C12799147E00B037B8 /* Networking */,
@@ -199,6 +202,14 @@
 				61C21ECD27967C0000FF83F8 /* MyFirstAppUITestsLaunchTests.swift */,
 			);
 			path = MyFirstAppUITests;
+			sourceTree = "<group>";
+		};
+		61CB8C1927993A9B00625624 /* DetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				61394F29279936F000F1C2DF /* DetailsVC.swift */,
+			);
+			path = DetailsVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +350,7 @@
 				6152F0C62799153900B037B8 /* Constant.swift in Sources */,
 				61C21EAF27967BFF00FF83F8 /* LoginVC.swift in Sources */,
 				61C21EAB27967BFF00FF83F8 /* AppDelegate.swift in Sources */,
+				61394F2A279936F100F1C2DF /* DetailsVC.swift in Sources */,
 				61C21EAD27967BFF00FF83F8 /* SceneDelegate.swift in Sources */,
 				6152F0C32799149200B037B8 /* Networking.swift in Sources */,
 			);
