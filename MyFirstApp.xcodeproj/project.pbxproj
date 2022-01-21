@@ -23,6 +23,7 @@
 		61C21EC227967C0000FF83F8 /* MyFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C21EC127967C0000FF83F8 /* MyFirstAppTests.swift */; };
 		61C21ECC27967C0000FF83F8 /* MyFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C21ECB27967C0000FF83F8 /* MyFirstAppUITests.swift */; };
 		61C21ECE27967C0000FF83F8 /* MyFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C21ECD27967C0000FF83F8 /* MyFirstAppUITestsLaunchTests.swift */; };
+		61FF84BF279A716F006A578F /* HomeVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF84BE279A716F006A578F /* HomeVm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		61C21EC727967C0000FF83F8 /* MyFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C21ECB27967C0000FF83F8 /* MyFirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITests.swift; sourceTree = "<group>"; };
 		61C21ECD27967C0000FF83F8 /* MyFirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61FF84BE279A716F006A578F /* HomeVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				6152F0BD2797EE2500B037B8 /* HomeVC.swift */,
-				6152F0BF2797F1AB00B037B8 /* MovieCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -171,14 +172,12 @@
 		61C21EA927967BFF00FF83F8 /* MyFirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				61CB8C1927993A9B00625624 /* DetailsVC */,
+				61FF84BD279A70A8006A578F /* VM */,
+				61FF84BB2799469D006A578F /* Controller */,
+				61FF84BA27994696006A578F /* View */,
 				6152F0C72799158800B037B8 /* Model */,
 				6152F0C42799152800B037B8 /* Common */,
 				6152F0C12799147E00B037B8 /* Networking */,
-				6152F0BC2797E3F600B037B8 /* Home */,
-				6152F0BB2797E3CC00B037B8 /* Login */,
-				6152F0B92797E39E00B037B8 /* Signup */,
-				6152F0B82797E38300B037B8 /* StoryBoard */,
 				61C21EAA27967BFF00FF83F8 /* AppDelegate.swift */,
 				61C21EAC27967BFF00FF83F8 /* SceneDelegate.swift */,
 				61C21EB327967C0000FF83F8 /* Assets.xcassets */,
@@ -210,6 +209,42 @@
 				61394F29279936F000F1C2DF /* DetailsVC.swift */,
 			);
 			path = DetailsVC;
+			sourceTree = "<group>";
+		};
+		61FF84BA27994696006A578F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61FF84BC279946CF006A578F /* Custom Table Cell */,
+				6152F0B82797E38300B037B8 /* StoryBoard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61FF84BB2799469D006A578F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6152F0B92797E39E00B037B8 /* Signup */,
+				6152F0BB2797E3CC00B037B8 /* Login */,
+				61CB8C1927993A9B00625624 /* DetailsVC */,
+				6152F0BC2797E3F600B037B8 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		61FF84BC279946CF006A578F /* Custom Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6152F0BF2797F1AB00B037B8 /* MovieCell.swift */,
+			);
+			path = "Custom Table Cell";
+			sourceTree = "<group>";
+		};
+		61FF84BD279A70A8006A578F /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				61FF84BE279A716F006A578F /* HomeVm.swift */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +382,7 @@
 				6152F0C92799159B00B037B8 /* PostModel.swift in Sources */,
 				6152F0BE2797EE2500B037B8 /* HomeVC.swift in Sources */,
 				6152F0C02797F1AB00B037B8 /* MovieCell.swift in Sources */,
+				61FF84BF279A716F006A578F /* HomeVm.swift in Sources */,
 				6152F0C62799153900B037B8 /* Constant.swift in Sources */,
 				61C21EAF27967BFF00FF83F8 /* LoginVC.swift in Sources */,
 				61C21EAB27967BFF00FF83F8 /* AppDelegate.swift in Sources */,

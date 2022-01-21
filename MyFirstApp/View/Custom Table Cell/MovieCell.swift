@@ -23,5 +23,10 @@ class MovieCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setData(post: PostModel?) {
+        titleLabel.text = post?.title ?? ""
+        bodyLabel.text = post?.body ?? ""
+    }
 
 }

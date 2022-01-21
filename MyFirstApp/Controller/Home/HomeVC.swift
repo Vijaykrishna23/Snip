@@ -48,10 +48,8 @@ extension HomeVC: UITableViewDataSource {
         
         let post = postList[indexPath.row]
         
-        objPostCell?.titleLabel.text = post?.title ?? ""
-        
-        objPostCell?.bodyLabel.text = post?.body ?? ""
-        
+        objPostCell?.setData(post: post)
+         
         return objPostCell!
     }
     
